@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block title %}
+    Update
+{% endblock title %}
+
+{% block body %}
+    
+<form action="/update/{{data.sno}}" method="POST">
+    <div class="container my-3">
+        <h2>Add Student's Name</h2>
+        <div class="mb-3 my-3">
+            <label for="studentname" class="form-label">Student Name</label>
+            <input type="text" class="form-control" id="studentname" name="studentname" value="{{data.studentname}}">
+        </div>
+        <div class="mb-3">
+            <label for="classwork" class="form-label">Class/Work</label>
+            <input type="text" class="form-control" id="classwork" name="classwork" value="{{data.classwork}}">
+        </div>
+        <div class="mb-3">
+            <label for="course" class="form-label">Course-Weeks</label>
+            <input type="text" class="form-control" id="course" name="course" value="{{data.course}}">
+        </div>
+        <div class="mb-3">
+            <label for="datestarted" class="form-label">Date Started</label>
+            <input type="text" class="form-control" id="datestarted" name="datestarted" value="{{data.date_started}}">
+        </div>
+        <div class="mb-3">
+            <label for="fees" class="form-label">Fees</label>
+            <input type="number" class="form-control" id="fees" name="fees" value="{{data.fees}}">
+        </div>
+        <div class="mb-3">
+            <label for="feespaid" class="form-label">Fees Paid</label>
+            <input type="number" class="form-control" id="feespaid" name="feespaid" value="{{data.feespaid}}">
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Update</button>
+    </form>
+</div>
+
+{% endblock body %}
