@@ -6,6 +6,10 @@
 > ### View the deployed [website here](https://mkcs-studentlist.herokuapp.com/). 
 ---
 
+**Flask Architecture Diagram**
+
+![image](https://user-images.githubusercontent.com/48170643/117681285-9620a300-b1cf-11eb-8e7c-e62321253125.png)
+
 *SQLITE DataBase was used in this operation. Further it was deployed on Heroku Server.*
 
 * Follow Me On Instagram at [Pranav Arora](https://www.instagram.com/arorapranav187)
